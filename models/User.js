@@ -16,10 +16,12 @@ const UserSchema = new Schema(
       required: true,
       match: [/.+@.+\..+/], // Mongoose matching validation
     },
-    thoughts: {
-      type: Schema.Types.ObjectId,
-      ref: 'Thought',
-    },
+    thoughts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Thought',
+      },
+    ],
     friends: [
       {
         type: Schema.Types.ObjectId,
@@ -27,4 +29,21 @@ const UserSchema = new Schema(
       },
     ],
   },
+  {
+    toJSON: {
+      virtuals: true,
+    },
+    id: false,
+  }
 );
+
+// Created the virtual called `friendCount` to retrieve the length of the user `friends` array field
+UserSchema.virtual('friendCount').get(function () {
+  return this.friends.length;
+});
+
+// Create the User model
+const User = model('User', UserSchema);
+
+// Export the module
+module.exports = User;
