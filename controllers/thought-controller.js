@@ -1,6 +1,5 @@
 // Import dependencies
 const { User, Thought } = require('../models');
-const { param } = require('../routes/api');
 
 // Create functionality for the Thought model
 const thoughtController = {
@@ -54,7 +53,7 @@ const thoughtController = {
       })
       .then(dbThoughtData => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No user found with this id' });
+          res.status(404).json({ message: 'No user found with this id!' });
           return;
         }
         res.json(dbThoughtData);
@@ -82,24 +81,14 @@ const thoughtController = {
     Thought.findOneAndDelete({ _id: params.id })
       .then(dbThoughtData => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No thoughts found with this id' });
+          res.status(404).json({ message: 'No thought with this ID' });
           return;
         }
-        return User.findOneAndUpdate(
-          { _id: params.userId },
-          { $pull: { thoughts: params.id } },
-          { new: true }
-        );
+        res.json(dbThoughtData);
       })
-      .then(dbUserData => {
-        if (!dbUserData) {
-          res.status(404).json({ message: 'No user found with this id' });
-          return;
-        }
-        res.json(dbUserData);
-      })
-      .catch(err => res.json(err));
+      .catch(err => res.status(400).json(err));
   },
 };
+
 // Export the module
 module.exports = thoughtController;
