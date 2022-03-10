@@ -107,6 +107,23 @@ const thoughtController = {
       })
       .catch(err => res.status(400).json(err));
   },
+
+  // delete reaction (callback function for `POST localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId`)
+  deleteReaction({ params }, res) {
+    Thought.findOneAndUpdate(
+      { _id: params.thoughtId },
+      { $pull: { reactions: { reactionId: params.reactionId } } },
+      { new: true }
+    )
+      .then(dbThoughtData => {
+        if (!dbThoughtData) {
+          res.status(404).json({ message: 'No reaction found with this id' });
+          return;
+        }
+        res.json(dbThoughtData);
+      })
+      .catch(err => res.json(err));
+  },
 };
 
 // Export the module
