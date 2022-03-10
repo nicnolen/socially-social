@@ -3,14 +3,15 @@ const router = require('express').Router();
 const {
   getAllUser,
   getUserById,
-  createUser
+  createUser,
+  updateUser
 } = require('../../controllers/user-controller');
 
 // Set up GET all at /api/users
 router.route('/').get(getAllUser).post(createUser);
 
 // Set up GET one at /api/users/:id
-router.route('/:id').get(getUserById);
+router.route('/:id').get(getUserById).put(updateUser);
 
 // Export the router
 module.exports = router;
