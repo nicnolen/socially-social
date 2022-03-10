@@ -33,6 +33,13 @@ const userController = {
         res.status(400).json(err);
       });
   },
+
+  // add a user to the database (callback function for `POST /api/users)
+  createUser({ body }, res) {
+    User.create(body)
+      .then(dbUserData => res.json(dbUserData))
+      .catch(err => res.status(400).json(err));
+  },
 };
 
 // Export the module
