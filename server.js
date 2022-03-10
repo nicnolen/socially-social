@@ -1,4 +1,3 @@
-/* SERVER */
 // Import dependencies
 const express = require('express');
 const mongoose = require('mongoose');
@@ -9,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use(require('./routes'));
+app.use(require('./routes'));
 
 // Tell Mongoose what database we want to connect to
 mongoose.connect(
