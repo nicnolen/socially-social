@@ -18,7 +18,7 @@ const UserSchema = new Schema(
     },
     thoughts: [
       {
-        type: Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId, // tell Mongoose to expect an object id
         ref: 'Thought',
       },
     ],
