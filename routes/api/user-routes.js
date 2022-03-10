@@ -1,9 +1,15 @@
 // Import dependencies
 const router = require('express').Router();
-const { getAllUser } = require('../../controllers/user-controller');
+const {
+  getAllUser,
+  getUserById,
+} = require('../../controllers/user-controller');
 
-// Set up GET all at /api/pizzas
+// Set up GET all at /api/users
 router.route('/').get(getAllUser);
+
+// Set up GET one at /api/users/:id
+router.route('/:id').get(getUserById);
 
 // Export the router
 module.exports = router;
