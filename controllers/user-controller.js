@@ -64,6 +64,21 @@ const userController = {
       })
       .catch(err => res.status(400).json(err));
   },
+
+  // delete user and associated thoughts (callback function for `DELETE /api/users/:id)
+  deleteUser({ params }, res) {
+    Thought.deleteMany({ userId: params.id })
+      .then(() => {
+        User.findOneAndDelete({ userId: params.id }).then(dbUserData => {
+          if (!dbUserData) {
+            res.status(404).json({ message: 'No User found with this id!' });
+            return;
+          }
+          res.json(dbUserData);
+        });
+      })
+      .catch(err => res.json(err));
+  },
 };
 
 // Export the module
