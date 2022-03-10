@@ -10,7 +10,7 @@ const {
 router.route('/').get(getAllThought).post(createThought);
 
 // Set up GET one, PUT, DELETE at /api/thoughts/:id
-router.route('/:id').get(getThoughtById);
+router.route('/:id').get(getThoughtById).put(getThoughtById);
 
 // Export the module
 module.exports = router;
