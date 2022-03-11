@@ -49,6 +49,8 @@ Once node.js is downloaded, click on the green code button and copy the link to 
 
 ### Screencastify
 
+Screencastify Link: <iframe src="https://drive.google.com/file/d/1y7-om1vzb2JfM9I3BcgEF6aiE4jNC1HV/preview" width="640" height="480"></iframe>
+
 ## License
 
 Permission to use this application is granted under the MIT license.
@@ -70,75 +72,73 @@ Click on the link for more information: [MIT License Information](https://openso
 
 - `/api/users`
 
-  - GET (all users)
+  **GET (all users)**
 
-    ![Get All Users](https://user-images.githubusercontent.com/88728912/157934216-fb89073e-a3df-45d6-879d-1ffc989845ba.png)
+  ![Get All Users](https://user-images.githubusercontent.com/88728912/157934216-fb89073e-a3df-45d6-879d-1ffc989845ba.png)
 
-  - POST (user)
+  **POST (user)**
 
-    ![Post User](https://user-images.githubusercontent.com/88728912/157934148-b74034b9-cf60-4b43-a948-83748a682d4c.png)
+  ![Post User](https://user-images.githubusercontent.com/88728912/157934148-b74034b9-cf60-4b43-a948-83748a682d4c.png)
 
 - `/api/users/:userid`
 
-  - GET (one user)
+  **GET (one user)**
 
-    ![Get User Id](https://user-images.githubusercontent.com/88728912/157934077-14f4b4de-08f9-40b4-9631-11013a9f6c06.png)
-    
-  - PUT (user)
+  ![Get User Id](https://user-images.githubusercontent.com/88728912/157934077-14f4b4de-08f9-40b4-9631-11013a9f6c06.png)
 
-    ![Put User](https://user-images.githubusercontent.com/88728912/157934016-acc126cf-0107-4b6f-816f-b29f41939c01.png)
+  **PUT (user)**
 
-    
-  - DELETE (user)
+  ![Put User](https://user-images.githubusercontent.com/88728912/157934016-acc126cf-0107-4b6f-816f-b29f41939c01.png)
 
-    ![Delete User](https://user-images.githubusercontent.com/88728912/157933898-1557ceb6-a081-403d-a6c8-5c5162842ac1.png)
+  **DELETE (user)**
+
+  ![Delete User](https://user-images.githubusercontent.com/88728912/157933898-1557ceb6-a081-403d-a6c8-5c5162842ac1.png)
 
 - `/api/users/:userId/friends/:friendId`
 
-  - POST (friend)
+  **POST (friend)**
 
-    ![Post Friend](https://user-images.githubusercontent.com/88728912/157933787-f9e855bd-8b37-4111-ba11-1d1516cfa162.png)
-    
-  - DELETE (friend)
+  ![Post Friend](https://user-images.githubusercontent.com/88728912/157933787-f9e855bd-8b37-4111-ba11-1d1516cfa162.png)
 
-    ![Delete Friend](https://user-images.githubusercontent.com/88728912/157933705-5bc6acbd-9cfd-4793-8e18-440ad37a42c7.png)
+  **DELETE (friend)**
+
+  ![Delete Friend](https://user-images.githubusercontent.com/88728912/157933705-5bc6acbd-9cfd-4793-8e18-440ad37a42c7.png)
 
 - `/api/thoughts`
 
-  - GET (all thoughts)
+  **GET (all thoughts)**
 
-    ![Get All Thoughts](https://user-images.githubusercontent.com/88728912/157933593-279dcc8a-6988-4728-85a1-e69ddb984b87.png)
+  ![Get All Thoughts](https://user-images.githubusercontent.com/88728912/157933593-279dcc8a-6988-4728-85a1-e69ddb984b87.png)
 
-  - POST (thought)
+  **POST (thought)**
 
-    ![Post Thoughts](https://user-images.githubusercontent.com/88728912/157933492-63f1b326-e5e5-4c49-80d2-e253b4358135.png)
+  ![Post Thoughts](https://user-images.githubusercontent.com/88728912/157933492-63f1b326-e5e5-4c49-80d2-e253b4358135.png)
 
 - `/api/thoughts/:thoughtId`
 
-  - GET (one thought)
+  **GET (one thought)**
 
-    ![Get Thought Id](https://user-images.githubusercontent.com/88728912/157933410-bc0c9972-93cf-4c26-ad37-ed0fdc11b170.png)
+  ![Get Thought Id](https://user-images.githubusercontent.com/88728912/157933410-bc0c9972-93cf-4c26-ad37-ed0fdc11b170.png)
 
-  - PUT (thought)
+  **PUT (thought)**
 
-    ![Put Thought](https://user-images.githubusercontent.com/88728912/157933292-e5784d2c-1cf1-4b61-81ef-db762c347c07.png)
+  ![Put Thought](https://user-images.githubusercontent.com/88728912/157933292-e5784d2c-1cf1-4b61-81ef-db762c347c07.png)
 
-  - DELETE (thought)
+  **DELETE (thought)**
 
-    ![Delete Thought](https://user-images.githubusercontent.com/88728912/157933176-5dee7f56-e8dd-4f47-9f56-df7b65b26acd.png)
+  ![Delete Thought](https://user-images.githubusercontent.com/88728912/157933176-5dee7f56-e8dd-4f47-9f56-df7b65b26acd.png)
 
 - `/api/thoughts/:thoughtId/reactions`
 
-  - POST (reaction)
+  **POST (reaction)**
 
-    ![Post Reaction](https://user-images.githubusercontent.com/88728912/157933079-f45fb8dc-3e22-4a0d-9207-abaab2fd7783.png)
+  ![Post Reaction](https://user-images.githubusercontent.com/88728912/157933079-f45fb8dc-3e22-4a0d-9207-abaab2fd7783.png)
 
 - `/api/thoughts/:thoughtId/reactions/:reactionId`
 
-  - DELETE (reaction)
+  **DELETE (reaction)**
 
-    ![Delete Reaction](https://user-images.githubusercontent.com/88728912/157932988-3a98a4dc-1352-4823-81d6-60f2bf10a97a.png)
-
+  ![Delete Reaction](https://user-images.githubusercontent.com/88728912/157932988-3a98a4dc-1352-4823-81d6-60f2bf10a97a.png)
 
 ## Contact Me
 
