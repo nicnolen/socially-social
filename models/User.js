@@ -14,6 +14,7 @@ const UserSchema = new Schema(
       type: String,
       unique: true,
       required: true,
+      trim: true,
       match: [/.+@.+\..+/], // Mongoose matching validation
     },
     thoughts: [
@@ -32,6 +33,7 @@ const UserSchema = new Schema(
   {
     toJSON: {
       virtuals: true,
+      getters: true,
     },
     id: false,
   }
