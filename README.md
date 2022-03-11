@@ -49,8 +49,7 @@ Once node.js is downloaded, click on the green code button and copy the link to 
 
 ### Screencastify
 
-Screencastify Link: <iframe src="https://drive.google.com/file/d/1y7-om1vzb2JfM9I3BcgEF6aiE4jNC1HV/preview" width="640" height="480"></iframe>
-
+Screencastify Link: https://drive.google.com/file/d/1y7-om1vzb2JfM9I3BcgEF6aiE4jNC1HV/view
 ## License
 
 Permission to use this application is granted under the MIT license.
