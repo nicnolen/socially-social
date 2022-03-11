@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Description](#description)
+- [Technologies Used](#technologies-used)
 - [Installation Instructions](#installation-instructions)
 - [Usage Instructions](#usage-instructions)
 - [License Section](#license)
